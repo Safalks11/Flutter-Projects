@@ -40,11 +40,12 @@ To run this project locally, follow these steps:
 
 ## 📂 Folder Structure
 
+Here’s an overview of the key folders in the project:
+
+```plaintext
 lib/
 ├── blocs/                # BLoC state management
 ├── models/               # Data models
 ├── screens/              # UI screens for different sections
 ├── widgets/              # Reusable widgets
 └── utils/                # Utility functions and helpers
-
----
