@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Safal_portfolio">
+  <meta name="keywords" content="Flutter, Portfolio, Firebase, Safal, Web Development">
+  <meta name="author" content="Safal">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://media.licdn.com/dms/image/v2/D5603AQG2gdfHdGkxjg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728641774210?e=2147483647&v=beta&t=G2OkoP-KdI1ctGLDVJ-nvzzZ9kOavZGyueGm5e_nudw"/>
+
+  <title>Safal_portfolio</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<script type="module">
+ import { initializeApp } from "firebase/app";
+ import { getAnalytics } from "firebase/analytics";
+
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAYqP3uJ-y7JkHmhB4VN_Pew-vjpFdmSqM",
+  authDomain: "flutter-web-f7b58.firebaseapp.com",
+  projectId: "flutter-web-f7b58",
+  storageBucket: "flutter-web-f7b58.firebasestorage.app",
+  messagingSenderId: "87813929736",
+  appId: "1:87813929736:web:872283aa26fdf3b735cabd",
+  measurementId: "G-QYYWZFCCLB"
+};
+
+ // Initialize Firebase
+ const app = initializeApp(firebaseConfig);
+ const analytics = getAnalytics(app);
+</script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

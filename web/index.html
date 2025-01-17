@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Safal_portfolio">
+  <meta name="keywords" content="Flutter, Portfolio, Firebase, Safal, Web Development">
+  <meta name="author" content="Safal">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://media.licdn.com/dms/image/v2/D5603AQG2gdfHdGkxjg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728641774210?e=2147483647&v=beta&t=G2OkoP-KdI1ctGLDVJ-nvzzZ9kOavZGyueGm5e_nudw"/>
+
+  <title>Safal_portfolio</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<script>
+  {{flutter_js}}
+  {{flutter_build_config}}
+
+  // TODO: Replace this with your own code to determine which renderer to use.
+  const useCanvasKit = true;
+
+  const config = {
+    renderer: useCanvasKit ? "canvaskit" : "skwasm",
+  };
+  _flutter.loader.load({
+    config: config,
+  });
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAZu3GuIebwdkFnRqalzcXcyV0yy6GrzTg",
+    authDomain: "safal-personal-portfolio.firebaseapp.com",
+    projectId: "safal-personal-portfolio",
+    storageBucket: "safal-personal-portfolio.firebasestorage.app",
+    messagingSenderId: "825554806567",
+    appId: "1:825554806567:web:1b43c4bfd8340063856b02"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("safal");
+  })();
+</script>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
